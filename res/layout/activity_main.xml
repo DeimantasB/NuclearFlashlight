@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radial_background"
+    tools:context=".MainActivity" >
+
+        <com.google.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-5701388313203279/5465773944"
+            ads:loadAdOnCreate="true" >
+        </com.google.ads.AdView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dip"
+        android:gravity="center"
+        android:padding="15dip"
+        android:text="Developed by Deimantas Brandisauskas\nThanks to @keithsereby for providing the design for button"
+        android:textColor="#3b3b3b"
+        android:textSize="13dip" />
+
+    <ImageButton
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@drawable/btn_swtich_on" />
+
+</RelativeLayout>
